@@ -1,19 +1,19 @@
 public class Main {
     public static void main(String[] args) {
         //входные данные
-        int initialamount = 100;
-        int replenishment = 1100;
+        int initialAmount = 100;
+        int replenishmentAmount = 1100;
 
         int bonus;
-        if (replenishment > 1000) {
+        if (replenishmentAmount > 1000) {
             bonus = 1;
         } else {
             bonus = 0;
         }
 
-        int endbonus = replenishment / 100 * bonus;
-        int Balance = initialamount + replenishment + endbonus;
+        int endbonus = replenishmentAmount / 100 * bonus;
+        int balance = initialAmount + replenishmentAmount + endbonus;
 
-        System.out.println(Balance);
+        System.out.println(balance);
     }
 }
